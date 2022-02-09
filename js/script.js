@@ -29,7 +29,11 @@ inputs.forEach((input) => {
 
 // password show / hide
 const passwordInput = document.querySelector(".password-input");
+const passwordInput1 = document.querySelector(".password-input-signup");
+const passwordInput2 = document.querySelector(".password-input-conf");
 const btnEye = document.querySelector(".btn-eye");
+const btnEye1 = document.querySelector(".btn-eye-signup");
+const btnEye2 = document.querySelector(".btn-eye-conf");
 
 btnEye.addEventListener("click", () => {
   if (passwordInput.type === "password") {
@@ -38,6 +42,24 @@ btnEye.addEventListener("click", () => {
   } else {
     passwordInput.type = "password";
     btnEye.innerHTML = '<i class="uil uil-eye-slash"></i>';
+  }
+});
+btnEye1.addEventListener("click", () => {
+  if (passwordInput1.type === "password") {
+    passwordInput1.type = "text";
+    btnEye1.innerHTML = '<i class="uil uil-eye"></i>';
+  } else {
+    passwordInput1.type = "password";
+    btnEye1.innerHTML = '<i class="uil uil-eye-slash"></i>';
+  }
+});
+btnEye2.addEventListener("click", () => {
+  if (passwordInput2.type === "password") {
+    passwordInput2.type = "text";
+    btnEye2.innerHTML = '<i class="uil uil-eye"></i>';
+  } else {
+    passwordInput2.type = "password";
+    btnEye2.innerHTML = '<i class="uil uil-eye-slash"></i>';
   }
 });
 

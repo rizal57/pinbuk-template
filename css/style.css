@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&family=Syne+Tactile&display=swap");
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -272,6 +272,7 @@ section {
 .header .profil-container .profil-wrapper .profil-box li a {
   color: #2a2438;
   font-weight: bold;
+  display: block;
 }
 
 .header .profil-container .profil-wrapper .profil-box li a:hover {
@@ -830,11 +831,15 @@ footer .copyright a:hover {
   opacity: 0.6;
 }
 
-.login .form-container .box .field .btn-eye {
+.login .form-container .box .field .btn-eye,
+.login .form-container .box .field .btn-eye-signup,
+.login .form-container .box .field .btn-eye-conf {
   cursor: pointer;
 }
 
-.login .form-container .box .field .btn-eye:hover i {
+.login .form-container .box .field .btn-eye:hover i,
+.login .form-container .box .field .btn-eye-signup:hover i,
+.login .form-container .box .field .btn-eye-conf:hover i {
   color: #dbd8e3;
 }
 
